@@ -10,7 +10,7 @@ class App:
     def __init__(self, master, socket):
         self.conn = socket
         self.frame = Frame(master)
-        self.label = Label(self.frame, text="Cliente chat. Python+TkInter. David López")
+        self.label = Label(self.frame, text="Cliente chat. Python+TkInter.")
         self.textarea = Text(self.frame, height=20, width=40)
         self.scroll = Scrollbar(self.frame, command=self.textarea.yview)
         self.textarea.configure(yscrollcommand=self.scroll.set)
@@ -66,7 +66,7 @@ lee = leer(miSocket)
 lee.start()
 
 root = Tk()
-root.title('Chat Python-TkInter - David López')
+root.title('Chat Python-TkInter')
 app = App(root, miSocket)
 
 root.mainloop()
